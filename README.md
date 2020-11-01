@@ -1,6 +1,6 @@
 # Repository for CS 411 Project Track 1 
 
-## Team Members: Rushill Shah Yash Sukhwani Shrikar Amirisetty
+#### Team Members: Rushill Shah Yash Sukhwani Shrikar Amirisetty
 
 ##### Guidelines: 
 
