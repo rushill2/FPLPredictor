@@ -1,0 +1,2 @@
+CREATE TABLE available_players AS
+SELECT * FROM `playerStats` WHERE `playerStats`.`COL 6` LIKE 'Not%' OR `playerStats`.`COL 6` LIKE 'I%'
