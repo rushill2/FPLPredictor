@@ -8,7 +8,7 @@
 import mariadb
 conn = mariadb.connect(
         user="fplrecommender_shrikar2",
-        password="20153amiri",
+        password="",
         host="localhost",
         port=3306,
         database="fplrecommender_MainDataDB"
