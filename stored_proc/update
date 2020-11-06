@@ -1,0 +1,6 @@
+create procedure delete(in player_id varchar(10), in name varchar(255))
+begin
+update available_players as a
+set a.name  = name
+where a.player_id = player_id
+end;
