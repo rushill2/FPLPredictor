@@ -1,0 +1,5 @@
+create procedure insert(in idx int, in name varchar(255), in teamname varchar(255))
+begin
+insert into available_players as a
+values(idx, name, teamname, '-', 0, 0, 'Available', 0, 0, 0, 0, 0)
+end;
