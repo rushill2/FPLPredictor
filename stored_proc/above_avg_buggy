@@ -1,0 +1,18 @@
+CREATE PROCEDURE avg_grab()
+BEGIN
+CREATE TABLE above_avg(
+	player_id varchar(9),
+    name varchar(16),
+    team varchar(4),
+    position varchar(8),
+    cost varchar(4),
+    status varchar(9),
+    minutes varchar(7),
+    total_points varchar(12),
+    bonus varchar(5),
+    points_per_game varchar(15),
+    selected_by_percent varchar(19)
+)
+
+INSERT INTO above_avg
+(SELECT * FROM `available_players` WHERE `available_players`.`points_per_game` >= (SELECT AVG(points_per_game) FROM `available_players`) AND `available_players`.position LIKE 'DEF')
