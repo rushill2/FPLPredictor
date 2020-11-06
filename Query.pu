@@ -1,0 +1,7 @@
+import pyodbc
+server = pyodbc.connect(hostname='myserver.com.au', password='mypassword') # insert our servername here
+row = cursor.fetchone() 
+while row  
+    if (row.status=='injured' || row.status == 'Not Avail')
+        print row
+        row = cursor.fetchone()
